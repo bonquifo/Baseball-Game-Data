@@ -12,5 +12,8 @@ have time to finish thus unfortunately they're not shown, however I am confident
 strengthen my report of the game data. 
 
 
+The method containing a 3d plot of the balls' position, velocity, and acceleration still needs to be finished and tested. Possibly include animations?????
+
+
 
 Thank you for reading this!
