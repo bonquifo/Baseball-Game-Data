@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Report</title>
+</head>
+<body>
+    <h1>Game Report</h1>
+
+    <h2>Final Game Scores</h2>
+    <p>ARK: {{ arkRAZScore }}</p>
+    <p>TEX: {{ texAGGScore }}</p>
+
+    <h2>Pitches Thrown</h2>
+    <p>Total number of pitches during the game: {{ totalPitches }}</p>
+    <p>Ark threw {{ arkPitches }} while Tex threw {{ texPitches }}</p>
+
+    <h2>Pitching Percentages</h2>
+    <p>Ark Pitching Percentage: {{ aPP }}%</p>
+    <p>Tex Pitching Percentage: {{ tPP }}%</p>
+
+    <h2>Outs, Balls, and Strikes over the game</h2>
+     <img src="C:\Users\tdude\OneDrive\Desktop\Baseball Data\OutsBallsStrikes.png" alt="Frequency chart"  style="float: right; margin-left: 10px;">
+
+        <p>Begins with a good balance between all three values, we can see a dip in all three around the 7th inning which can signify an increase in hits and runs being scored</p></p>
+    <h2>Team Pitching Percentage</h2>
+    <img src = "C:\Users\tdude\OneDrive\Desktop\Baseball Data\PitchPercentageByTeam.png" alt="Percentages" style="float: right, margin-left 10px">
+    <p>Overall very balanced with a slight skew in Arkansas' favor</p>
+
+
+    <h2>Post Game Leaders</h2>
+    <p>Best Pitcher by ERA: {{ bestPitcherName }}</p>
+    <p>Worst Pitcher by ERA: {{ worstPitcherName }}</p>
+    <p>Best Batter by OBP: {{ bestBatterName }} </p>
+    <p>Worst Batter by OBP: {{ worstBatterName }} </p>
+
+    <h2>Strongest Hit by Speed</h2>
+    <p>Strongest hit of the game was clocked at {{fastestHitBySpeed}}</p>
+
+    <h2>Home Run Hitters </h2>
+    <p>A homerun was swung by {{homeRunners}}</p>
+
+
+    <h2>Player Analysis</h2>
+    <p>Lets take a look at this game's best pitcher {{bestPitcherName}}</p>
+    <p>Here's a current rundown of his performance this game: </p>
+    <div>
+        <p> Average Pitching Speed: {{avgPitch}}mph </p>
+        <p> Average Pitch Per Plate Appearance: {{averagePPA}} </p>
+        <p> Pitches thrown: {{pitchesThrown}}</p>
+        <p> His slowest Pitch was {{slowestPitch}}mph</p>
+        <h3> Here is a breakdown of his pitching composition</h3>
+        <img src = 'C:\Users\tdude\OneDrive\Desktop\Baseball Data\PitchesThrown.png' alt ='pitches thrown' style="float: right, margin bottom 10px">
+        <p> Looks like he decided to throw in perfect thirds during his time on the mound</p>
+    </div>
+    <p>Lets look at this game's best batter {{bestBatterName}}</p>
+    <div>
+        <p> RBI: {{RBI}} </p>
+        <p> OBP: {{OBP}}</p>
+        <P> OPS: {{OPS}}</P>
+        <P> Slugging: {{slugging}}</P>
+        <p> Batting Average: {{battingAverage}}</p>
+        <p> Average Hits: {{averageHit}}</p>
+
+        <h3> Lets see how many pitches he faced and what certain pitches he may be suspect to swinging at</h3>
+        <img src = 'C:\Users\tdude\OneDrive\Desktop\Baseball Data\PitchesBestBatterFaced.png' alt="pitches faced" style="float: right">
+        <p> Mostly sliders with a bit of fastballs, we can also look at his tendancy toward certain pitches below</p>
+        <img src = 'C:\Users\tdude\OneDrive\Desktop\Baseball Data\BestBatterStrikePercentage.png' alt="strike %" style="float: right">
+        <P> It seems he strikes out mostly on fastballs, which he received far less than sliders. We can also determine his hitting tendancies below</P>
+        <img src ='C:\Users\tdude\OneDrive\Desktop\Baseball Data\BestBatterHitPercentage.png' alt="hit %" style="float: right">
+        <p> Pretty much what you'd expect, the opposite of the strike percentage break down</p>
+        
+    </div>
+        <h2> Now lets evaluate the worst performers </h2>
+        <p> By the stats, the worst pitcher of the game was {{worstPitcherName}} by ERA</p>
+        <img src=" C:\Users\tdude\OneDrive\Desktop\Baseball Data\worstPitcherComposition.png" alt="worst pit comp" style="float: center">
+        <p> A perfect division by 3 between his choices of pitches it seems</p>
+        <img src="C:\Users\tdude\OneDrive\Desktop\Baseball Data\worstPitchesResult.png" alt="worstResult" style="float: center">
+        <p>This is interesting. The largest result of his pitches were balls and strikes which does eventually allow for a walk. </p>
+        <img src="C:\Users\tdude\OneDrive\Desktop\Baseball Data\worstPitcherStrikePercentage.png" alt="worstStrike%" style="float: left">
+        <p> Among his pitches, he was able to strike out most batters on his fastballs</p>
+        <p> All of these players were ranked best and worst performers soley based on one statistic throughout only this game</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Report</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        h1 {
+            color: #1e90ff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .float-right {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Report</h1>
+
+    <div class="section">
+        <h2>Final Game Scores</h2>
+        <p>ARK: 3</p>
+        <p>TEX: 1</p>
+    </div>
+
+    <div class="section">
+        <h2>Pitches Thrown</h2>
+        <p>Total number of pitches during the game: 314</p>
+        <p>Ark threw 165 while Tex threw 149</p>
+    </div>
+
+    <!-- Add more sections as needed -->
+
+    <div class="section float-right">
+        <h2>Outs, Balls, and Strikes over the game</h2>
+        <img src="C:\Users\tdude\OneDrive\Desktop\Baseball Data\OutsBallsStrikes.png" alt="Frequency chart">
+        <p>Begins with a good balance between all three values, we can see a dip in all three around the 7th inning which can signify an increase in hits and runs being scored</p>
+    </div>
+
+    <div class="section float-right">
+        <h2>Team Pitching Percentage</h2>
+        <img src="C:\Users\tdude\OneDrive\Desktop\Baseball Data\PitchPercentageByTeam.png" alt="Percentages">
+        <p>Overall very balanced with a slight skew in Arkansas' favor</p>
+    </div>
+    
+    <div class="section float-right">
+        <h2>Post Game leaders </h2>
+        <p>Best Pitcher by ERA: ('Taylor, Evan', 0.0)</p>
+        <p>Worst Pitcher by ERA: ('Dallas, Micah', 6.75)</p>
+        <p>Best Batter by OBP: ('Lanzilli, Chris', 0.13333333333333333) </p>
+        <p>Worst Batter by OBP: ('Bost, Austin', 0.0) </p>
+            <h2>Strongest Hit by Speed</h2>
+         <p>Strongest hit of the game was clocked at None</p>
+         <h2>Home Run Hitters </h2>
+        <p>A homerun was swung by None!</p>
+        </div>
+    
+    <div class="section float-right">
+        <h2>Player Analysis</h2>
+        <p>Lets take a look at this game's best pitcher ('Taylor, Evan', 0.0)</p>
+        <p>Here's a current rundown of his performance this game: </p>
+        <div>
+            <p> Average Pitching Speed: 93.917205mph </p>
+            <p> Average Pitch Per Plate Appearance: 1.8571428571428572 </p>
+            <p> Pitches thrown: 12</p>
+            <p> His slowest Pitch was 93.54829mph</p>
+            <h3> Here is a breakdown of his pitching composition</h3>
+            <img src = 'C:\Users\tdude\OneDrive\Desktop\Baseball Data\PitchesThrown.png' alt ='pitches thrown' style="float: right, margin bottom 10px">
+            <p> Looks like he decided to throw in perfect thirds during his time on the mound</p>
+    </div>
+    
+    <div class="section float-right">
+        <h2>Lets Look at this Game's Best batter by OBP ('Lanzilli, Chris', 0.13333333333333333)!</h2>
+        <p> RBI: 0 </p>
+        <p> OBP: 0.13333333333333333</p>
+        <P> OPS: 0.36410256410256414</P>
+        <P> Slugging: 0.23076923076923078</P>
+        <p> Batting Average: 0.15384615384615385</p>
+        <p> Average Hits: nan</p>
+
+        <h2> Lets see how many pitches he faced and what certain pitches he may be suspect to swinging at</h2>
+        <img src = 'C:\Users\tdude\OneDrive\Desktop\Baseball Data\PitchesBestBatterFaced.png' alt="pitches faced" style="float: right">
+        <p> Mostly sliders with a bit of fastballs, we can also look at his tendancy toward certain pitches below</p>
+        <img src = 'C:\Users\tdude\OneDrive\Desktop\Baseball Data\BestBatterStrikePercentage.png' alt="strike %" style="float: right">
+        <P> It seems he strikes out mostly on fastballs, which he received far less than sliders. We can also determine his hitting tendancies below</P>
+        <img src ='C:\Users\tdude\OneDrive\Desktop\Baseball Data\BestBatterHitPercentage.png' alt="hit %" style="float: right">
+        <p> Pretty much what you'd expect, the opposite of the strike percentage break down</p>
+    </div>
+        <div>
+            <h2> Now lets evaluate the worst performers </h2>
+        <p> By the stats, the worst pitcher of the game was ('Dallas, Micah', 6.75) by ERA</p>
+        <img src=" C:\Users\tdude\OneDrive\Desktop\Baseball Data\worstPitcherComposition.png" alt="worst pit comp" style="float: center">
+        <p> A perfect division by 3 between his choices of pitches it seems</p>
+        <img src="C:\Users\tdude\OneDrive\Desktop\Baseball Data\worstPitchesResult.png" alt="worstResult" style="float: center">
+        <p>This is interesting. The largest result of his pitches were balls and strikes which does eventually allow for a walk. </p>
+        <img src="C:\Users\tdude\OneDrive\Desktop\Baseball Data\worstPitcherStrikePercentage.png" alt="worstStrike%" style="float: left">
+        <p> Among his pitches, he was able to strike out most batters on his fastballs</p>
+        <p> All of these players were ranked best and worst performers soley based on one statistic throughout only this game</p>
+
+
+
+
+
+        </div>
+    
+</body>
+</html>
